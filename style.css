@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* || RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root{
+    --BG-COLOR-BODY: hsl(217, 54%, 11%);
+    --BG-COLOR-CARD: hsl(216, 50%, 16%);
+    --FONT-COLOR: hsl(215, 51%, 70%);
+    --HOVER-COLOR: hsl(178, 100%, 50%);
+}
+
+/* || GENERAL STYLES */
+body {
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--BG-COLOR-BODY);
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    max-width: 300px;
+    height: auto;
+    background-color: var(--BG-COLOR-CARD);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 2px 4px 17px rgba(0, 0, 0, 0.356);
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__img2 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 247, 0.185);
+    opacity: 0;
+}
+
+.hero__img2:hover {
+    opacity: 1;   
+}
+
+.hero__img2 img {
+    width: 20%;
+    height: 20%;
+    justify-self: center;
+    align-self: center;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card__text h1 {
+    margin-top: 1.3rem;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+}
+
+.card__text h1:hover {
+    color: var(--HOVER-COLOR);
+}
+
+.card__text p {
+    color: var(--FONT-COLOR);
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+    letter-spacing: 0.025em;
+}
+
+.card__value {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#p__color {
+    font-weight: 400;
+    color: var(--HOVER-COLOR);
+}
+
+.card__value P {
+    margin-left: 0.3rem;
+}
+
+.card__value span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+hr {
+    border-color: hsla(215, 34%, 41%, 0.308);
+}
+
+.card__profile  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.card__profile img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.card__profile span {
+    color: #fff;
+}
+
+.card__profile span:hover {
+    color: var(--HOVER-COLOR);
+}
+
+footer {
+    margin: 1.5rem;
+    text-align: center;
+}
+
+
+
+
